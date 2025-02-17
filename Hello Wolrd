@@ -1,0 +1,98 @@
+Microsoft Windows [versão 10.0.22000.2538]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\CAMARGO>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é 1AC4-B9E4
+
+ Pasta de C:\Users\CAMARGO
+
+17/02/2025  09:12    <DIR>          .
+18/02/2022  10:16    <DIR>          ..
+18/08/2023  09:37    <DIR>          .android
+17/02/2025  09:06               305 .bash_history
+27/08/2024  18:58    <DIR>          .cache
+22/02/2022  08:04    <DIR>          .dbus-keyrings
+04/03/2022  09:07    <DIR>          .dia
+22/02/2022  09:10    <DIR>          .dotnet
+27/08/2024  18:57    <DIR>          .eclipse
+17/02/2025  09:12                65 .gitconfig
+18/08/2023  09:32    <DIR>          .gradle
+17/02/2025  09:00                20 .lesshst
+18/08/2023  09:38    <DIR>          .m2
+09/05/2023  07:44    <DIR>          .nbi
+27/08/2024  18:58    <DIR>          .p2
+22/02/2022  08:44    <DIR>          .portugol
+12/06/2024  14:11    <DIR>          .vscode
+14/02/2022  07:26    <DIR>          3D Objects
+18/08/2023  09:23    <DIR>          AndroidStudioProjects
+18/02/2022  10:25    <DIR>          Contacts
+17/02/2025  09:01    <DIR>          Desktop
+04/04/2023  15:23    <DIR>          Documents
+12/06/2024  13:41    <DIR>          Downloads
+27/08/2024  18:28    <DIR>          eclipse
+27/08/2024  18:57    <DIR>          eclipse-workspace
+18/02/2022  10:25    <DIR>          Favorites
+18/02/2022  10:25    <DIR>          Links
+18/02/2022  10:25    <DIR>          Music
+14/02/2022  07:27    <DIR>          OneDrive
+18/02/2022  10:25    <DIR>          Pictures
+18/02/2022  10:25    <DIR>          Saved Games
+18/02/2022  10:25    <DIR>          Searches
+22/02/2022  09:31    <DIR>          source
+18/02/2022  10:25    <DIR>          Videos
+               3 arquivo(s)            390 bytes
+              31 pasta(s)   367.735.205.888 bytes disponíveis
+
+C:\Users\CAMARGO>cd desktop
+
+C:\Users\CAMARGO\Desktop>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é 1AC4-B9E4
+
+ Pasta de C:\Users\CAMARGO\Desktop
+
+17/02/2025  09:01    <DIR>          .
+17/02/2025  09:12    <DIR>          ..
+22/02/2022  08:43               111 APP INVENTOR.url
+04/03/2022  09:09               914 Astah Community.lnk
+22/02/2022  07:55             1.199 blender.lnk
+07/08/2023  11:30             1.095 Cisco Packet Tracer.lnk
+17/02/2025  09:16    <DIR>          ds-sophia-lorena
+27/08/2024  18:57             1.099 Eclipse IDE for Java Developers - 2024-06.lnk
+17/02/2025  08:33               427 Hello_World.class
+17/02/2025  08:21               126 Hello_World.java
+18/02/2022  10:25             2.355 Microsoft Edge.lnk
+14/03/2022  09:55             1.629 Pública (192.168.2.18) - Atalho.lnk
+06/08/2024  18:31             1.413 Visual Studio Code.lnk
+              10 arquivo(s)         10.368 bytes
+               3 pasta(s)   367.736.651.776 bytes disponíveis
+
+C:\Users\CAMARGO\Desktop>javac Hello_World.java
+
+C:\Users\CAMARGO\Desktop>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é 1AC4-B9E4
+
+ Pasta de C:\Users\CAMARGO\Desktop
+
+17/02/2025  09:01    <DIR>          .
+17/02/2025  09:12    <DIR>          ..
+22/02/2022  08:43               111 APP INVENTOR.url
+04/03/2022  09:09               914 Astah Community.lnk
+22/02/2022  07:55             1.199 blender.lnk
+07/08/2023  11:30             1.095 Cisco Packet Tracer.lnk
+17/02/2025  09:16    <DIR>          ds-sophia-lorena
+27/08/2024  18:57             1.099 Eclipse IDE for Java Developers - 2024-06.lnk
+17/02/2025  09:21               427 Hello_World.class
+17/02/2025  08:21               126 Hello_World.java
+18/02/2022  10:25             2.355 Microsoft Edge.lnk
+14/03/2022  09:55             1.629 Pública (192.168.2.18) - Atalho.lnk
+06/08/2024  18:31             1.413 Visual Studio Code.lnk
+              10 arquivo(s)         10.368 bytes
+               3 pasta(s)   367.712.538.624 bytes disponíveis
+
+C:\Users\CAMARGO\Desktop>java Hello_World
+Hello World
+
+C:\Users\CAMARGO\Desktop>
