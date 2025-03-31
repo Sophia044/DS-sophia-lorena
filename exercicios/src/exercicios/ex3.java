@@ -10,9 +10,28 @@ import java.util.Scanner;
  */
 public class ex3 {
     public static void main(String[] args) {
-        Scanner numero = new Scanner (System.in);
+        Scanner scanner = new Scanner (System.in);
         System.out.println("escreva um numero");
-        int Numero1 = numero.nextInt();
+        int Numero1 = scanner.nextInt();
+        
+        System.out.println("Numeros pares de 1 a " +Numero1);
+        int i = 1;
+        while (i <= Numero1) {
+        if (i % 2 ==0){
+            System.out.println(i+"");
+             
+        }
+        i++;
+    }
+        System.out.println("Numeros ímpares de 1 a " +Numero1);
+        i=1;
+        while (i <= Numero1){
+            if (i% 2 != 0){
+                System.out.println(i+"");
+               
+            }
+            i++;
+        }
     }
     
 }
