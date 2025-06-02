@@ -8,17 +8,20 @@ import java.util.Scanner;
  *
  * @author CAMARGO
  */
-public class ex2 {
+public class ex6 {
     public static void main(String[] args) {
-         int Soma = 0;
         Scanner Entrada = new Scanner(System.in);
         int[] Numeros = new int[10];
+        
+        System.out.println("Insira os numeros:");
         for(int i = 0; i < Numeros.length; i++)
         {
-            System.out.println("Insira os numeros:");
             Numeros[i] = Entrada.nextInt();
-            Soma+=Numeros[i];
         }
-        System.out.println("A soma de todos os numeros e igual a:"+Soma);
+        System.out.println("-------------------------------------");
+        for(int i = 0; i < Numeros.length; i+=2)
+        {
+            System.out.println(Numeros[i]);
+        }
     }
 }

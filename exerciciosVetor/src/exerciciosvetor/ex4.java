@@ -8,17 +8,22 @@ import java.util.Scanner;
  *
  * @author CAMARGO
  */
-public class ex2 {
+public class ex4 {
     public static void main(String[] args) {
-         int Soma = 0;
-        Scanner Entrada = new Scanner(System.in);
-        int[] Numeros = new int[10];
+          Scanner Entrada = new Scanner(System.in);
+        System.out.println("Quantas celulas voce deseja?");
+        int Quantidade_Celulas = Entrada.nextInt();
+        int[] Numeros = new int[Quantidade_Celulas];
+        
+        System.out.println("Insira os numeros:");
         for(int i = 0; i < Numeros.length; i++)
         {
-            System.out.println("Insira os numeros:");
             Numeros[i] = Entrada.nextInt();
-            Soma+=Numeros[i];
         }
-        System.out.println("A soma de todos os numeros e igual a:"+Soma);
+        
+        for(int i = Quantidade_Celulas - 1; i >= 0; i--)
+        {
+            System.out.println(Numeros[i]);
+        }
     }
 }

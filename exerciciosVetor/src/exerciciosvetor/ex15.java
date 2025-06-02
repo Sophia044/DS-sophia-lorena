@@ -8,17 +8,26 @@ import java.util.Scanner;
  *
  * @author CAMARGO
  */
-public class ex2 {
+public class ex15 {
     public static void main(String[] args) {
-         int Soma = 0;
         Scanner Entrada = new Scanner(System.in);
         int[] Numeros = new int[10];
+        
+        System.out.println("Insira os numeros no vetor:");
+        
         for(int i = 0; i < Numeros.length; i++)
         {
-            System.out.println("Insira os numeros:");
             Numeros[i] = Entrada.nextInt();
-            Soma+=Numeros[i];
         }
-        System.out.println("A soma de todos os numeros e igual a:"+Soma);
+        
+        System.out.println("-----------------\nNumeros em posicoes impares:");
+        
+        for(int i  = 0; i < Numeros.length; i++)
+        {
+            if(i%2 != 0)
+            {
+                System.out.println(Numeros[i]);
+            }
+        }
     }
 }
