@@ -16,7 +16,17 @@ public class Calculadora extends javax.swing.JFrame {
      */
     public Calculadora() {
         initComponents();
+        Desabilitar();
     }
+    
+    void Desabilitar(){
+txt_n1.setEditable(false); txt_n2.setEditable(false); txt_nRes.setEditable(false);
+}
+
+void Habilitar(){
+txt_n1.setEditable(true); txt_n2.setEditable(true); txt_nRes.setEditable(true);
+}
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -55,6 +65,24 @@ public class Calculadora extends javax.swing.JFrame {
 
         jLabel6.setText("RESULTADO");
 
+        txt_n1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_n1ActionPerformed(evt);
+            }
+        });
+
+        txt_n2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_n2ActionPerformed(evt);
+            }
+        });
+
+        txt_nRes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_nResActionPerformed(evt);
+            }
+        });
+
         btn_Somar.setText("+");
         btn_Somar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,18 +91,53 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         btn_Subtrair.setText("-");
+        btn_Subtrair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_SubtrairActionPerformed(evt);
+            }
+        });
 
         btn_Multiplicar.setText("*");
+        btn_Multiplicar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_MultiplicarActionPerformed(evt);
+            }
+        });
 
         btn_Dividir.setText("/");
+        btn_Dividir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_DividirActionPerformed(evt);
+            }
+        });
 
         btn_Retornar.setText("Retornar");
+        btn_Retornar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_RetornarActionPerformed(evt);
+            }
+        });
 
         btn_Novo.setText("novo");
+        btn_Novo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_NovoActionPerformed(evt);
+            }
+        });
 
         btn_Limpar.setText("limpar");
+        btn_Limpar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_LimparActionPerformed(evt);
+            }
+        });
 
         btn_Sair.setText("sair");
+        btn_Sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_SairActionPerformed(evt);
+            }
+        });
 
         btn_Comparação.setText("comparação");
 
@@ -165,12 +228,84 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void btn_SomarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SomarActionPerformed
         // TODO add your handling code here:
+       int n1 = Integer.parseInt(txt_n1.getText());
+       int n2 = Integer.parseInt(txt_n2.getText());
+       int resultado;
+       //soma
+     
+       resultado = n1 + n2;
+       // mostrar 
+        txt_nRes.setText(String.valueOf(resultado));
+       
     }//GEN-LAST:event_btn_SomarActionPerformed
+
+    private void btn_SubtrairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SubtrairActionPerformed
+        // TODO add your handling code here:
+        int n1 = Integer.parseInt(txt_n1.getText());
+    int n2 = Integer.parseInt(txt_n2.getText());
+    int resultado = n1 - n2;
+    txt_nRes.setText(String.valueOf(resultado));
+    }//GEN-LAST:event_btn_SubtrairActionPerformed
+
+    private void btn_MultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_MultiplicarActionPerformed
+        // TODO add your handling code here:
+        int n1 = Integer.parseInt(txt_n1.getText());
+    int n2 = Integer.parseInt(txt_n2.getText());
+    int resultado = n1 * n2;
+    txt_nRes.setText(String.valueOf(resultado));
+    }//GEN-LAST:event_btn_MultiplicarActionPerformed
+
+    private void btn_DividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_DividirActionPerformed
+        // TODO add your handling code here:
+        int n1 = Integer.parseInt(txt_n1.getText());
+    int n2 = Integer.parseInt(txt_n2.getText());
+    
+    if (n2 != 0) {
+        double resultado = (double) n1 / n2;
+        txt_nRes.setText(String.valueOf(resultado));
+    } else {
+        txt_nRes.setText("Erro: div por 0");
+    }
+    }//GEN-LAST:event_btn_DividirActionPerformed
+
+    private void btn_RetornarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RetornarActionPerformed
+        // TODO add your handling code here:                                    
+
+    }//GEN-LAST:event_btn_RetornarActionPerformed
+
+    private void btn_LimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LimparActionPerformed
+        // TODO add your handling code here:
+         txt_n1.setText("");
+        txt_n2.setText("");
+        txt_nRes.setText("0");
+    }//GEN-LAST:event_btn_LimparActionPerformed
+
+    private void txt_n1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_n1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_n1ActionPerformed
+
+    private void txt_n2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_n2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_n2ActionPerformed
+
+    private void txt_nResActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nResActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_nResActionPerformed
+
+    private void btn_SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SairActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btn_SairActionPerformed
+
+    private void btn_NovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_NovoActionPerformed
+        // TODO add your handling code here:
+        Habilitar();
+    }//GEN-LAST:event_btn_NovoActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -183,13 +318,23 @@ public class Calculadora extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Calculadora().setVisible(true));
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Calculadora().setVisible(true);
+            }
+        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -151,10 +151,19 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_n1">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_n1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_n2">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_n2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_nRes">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nResActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_Somar">
           <Properties>
@@ -168,36 +177,57 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="-"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_SubtrairActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_Multiplicar">
           <Properties>
             <Property name="text" type="java.lang.String" value="*"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_MultiplicarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_Dividir">
           <Properties>
             <Property name="text" type="java.lang.String" value="/"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_DividirActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_Retornar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Retornar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_RetornarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JToggleButton" name="btn_Novo">
           <Properties>
             <Property name="text" type="java.lang.String" value="novo"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_NovoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_Limpar">
           <Properties>
             <Property name="text" type="java.lang.String" value="limpar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_LimparActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_Sair">
           <Properties>
             <Property name="text" type="java.lang.String" value="sair"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_SairActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_Compara&#xe7;&#xe3;o">
           <Properties>
