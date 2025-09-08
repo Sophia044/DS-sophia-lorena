@@ -40,3 +40,8 @@ Este repositório é uma coletanea de projetos iniciados no Segundo bimestre mes
 - Entidades como `Pessoa`, `Vacina`, `Dose`
 - Controle de vacinação pendente, finalizada
 - Lógica de intervalo entre doses, relatórios de vacinação
+
+---
+
+## 5. Java Calculadora
+**Descrição:** Desafio para criar o projeto visual de uma calculadora com as operações de adição, subtração, multiplicação e divisão. 
